@@ -1,0 +1,6 @@
+framework module Pods_SEWA_ConnectTests {
+  umbrella header "Pods-SEWA ConnectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
