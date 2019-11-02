@@ -7,6 +7,7 @@ target 'SEWA Connect' do
 
   # Pods for SEWA Connect
   pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
 
