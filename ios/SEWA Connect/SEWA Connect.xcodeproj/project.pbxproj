@@ -16,6 +16,7 @@
 		17E39298236E0666005D94BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E39296236E0666005D94BE /* LaunchScreen.storyboard */; };
 		17E392A3236E0666005D94BE /* SEWA_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E392A2236E0666005D94BE /* SEWA_ConnectTests.swift */; };
 		17E392AE236E0666005D94BE /* SEWA_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E392AD236E0666005D94BE /* SEWA_ConnectUITests.swift */; };
+		22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A814FE236E24C4008596DF /* FTUEViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		17E392A9236E0666005D94BE /* SEWA ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SEWA ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E392AD236E0666005D94BE /* SEWA_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEWA_ConnectUITests.swift; sourceTree = "<group>"; };
 		17E392AF236E0666005D94BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A814FC236E1236008596DF /* SEWA Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SEWA Connect.entitlements"; sourceTree = "<group>"; };
+		22A814FE236E24C4008596DF /* FTUEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUEViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		17E39288236E0663005D94BE /* SEWA Connect */ = {
 			isa = PBXGroup;
 			children = (
+				22A814FD236E2428008596DF /* ui */,
+				22A814FC236E1236008596DF /* SEWA Connect.entitlements */,
 				17E39289236E0663005D94BE /* AppDelegate.swift */,
 				17E3928B236E0663005D94BE /* SceneDelegate.swift */,
 				17E3928D236E0663005D94BE /* MasterViewController.swift */,
@@ -129,6 +134,14 @@
 				17E392AF236E0666005D94BE /* Info.plist */,
 			);
 			path = "SEWA ConnectUITests";
+			sourceTree = "<group>";
+		};
+		22A814FD236E2428008596DF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				22A814FE236E24C4008596DF /* FTUEViewController.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */,
 				17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */,
 				17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */,
 				17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */,
@@ -447,6 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jhk.SEWA-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,6 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jhk.SEWA-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
