@@ -5,6 +5,7 @@ admin.initializeApp()
 export const helpRequest = functions.https.onRequest((request,response)=>{
     admin.firestore().doc('help_request/KaMnonIYT1IAETctylBe').then(data=>{
         response.send("hello Can you see me!")
+                
     })
 })
 
