@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */; };
+		172A6882236E5230001BDE43 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6881236E5230001BDE43 /* UserProvider.swift */; };
+		172A6884236E52D8001BDE43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6883236E52D8001BDE43 /* User.swift */; };
+		172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */; };
+		172A6888236E7845001BDE43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 172A6887236E7845001BDE43 /* GoogleService-Info.plist */; };
+		172A688A236E7AEF001BDE43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6889236E7AEF001BDE43 /* Request.swift */; };
+		172A688C236E7B75001BDE43 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688B236E7B75001BDE43 /* Location.swift */; };
+		172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688F236E9845001BDE43 /* UIViewController+Present.swift */; };
+		172A6892236E9B53001BDE43 /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6891236E9B53001BDE43 /* RootSplitViewController.swift */; };
+		172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */; };
+		1730A5B6236E2C270080B618 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1730A5B4236E2BEC0080B618 /* WebKit.framework */; };
 		17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E39289236E0663005D94BE /* AppDelegate.swift */; };
 		17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E3928B236E0663005D94BE /* SceneDelegate.swift */; };
 		17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E3928D236E0663005D94BE /* MasterViewController.swift */; };
@@ -16,7 +27,10 @@
 		17E39298236E0666005D94BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E39296236E0666005D94BE /* LaunchScreen.storyboard */; };
 		17E392A3236E0666005D94BE /* SEWA_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E392A2236E0666005D94BE /* SEWA_ConnectTests.swift */; };
 		17E392AE236E0666005D94BE /* SEWA_ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E392AD236E0666005D94BE /* SEWA_ConnectUITests.swift */; };
+		20FA05F640EBB1CAE361DF34 /* Pods_SEWA_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD691DED846956496AA1700 /* Pods_SEWA_Connect.framework */; };
 		22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A814FE236E24C4008596DF /* FTUEViewController.swift */; };
+		996D0CA8EFD9C9C2EE80D551 /* Pods_SEWA_ConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5882B1A6C4B816835F7739 /* Pods_SEWA_ConnectTests.framework */; };
+		BCE71CF7B0EC649729C35086 /* Pods_SEWA_Connect_SEWA_ConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B473631E6DFD68827981F6C /* Pods_SEWA_Connect_SEWA_ConnectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSubmissionViewController.swift; sourceTree = "<group>"; };
+		172A6881236E5230001BDE43 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		172A6883236E52D8001BDE43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		172A6887236E7845001BDE43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		172A6889236E7AEF001BDE43 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		172A688B236E7B75001BDE43 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		172A688F236E9845001BDE43 /* UIViewController+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
+		172A6891236E9B53001BDE43 /* RootSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
+		172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProvider.swift; sourceTree = "<group>"; };
+		1730A5B4236E2BEC0080B618 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		17E39286236E0663005D94BE /* SEWA Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEWA Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E39289236E0663005D94BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17E3928B236E0663005D94BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +77,17 @@
 		17E392A9236E0666005D94BE /* SEWA ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SEWA ConnectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E392AD236E0666005D94BE /* SEWA_ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEWA_ConnectUITests.swift; sourceTree = "<group>"; };
 		17E392AF236E0666005D94BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA269764E5BD2FF9778C212 /* Pods-SEWA ConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA ConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-SEWA ConnectTests/Pods-SEWA ConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		22A814FC236E1236008596DF /* SEWA Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SEWA Connect.entitlements"; sourceTree = "<group>"; };
 		22A814FE236E24C4008596DF /* FTUEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTUEViewController.swift; sourceTree = "<group>"; };
+		26705DA883F0B06D65BCC4BB /* Pods-SEWA Connect-SEWA ConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA Connect-SEWA ConnectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SEWA Connect-SEWA ConnectUITests/Pods-SEWA Connect-SEWA ConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3A43E449D2C5CE9A6FDFAF /* Pods-SEWA Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA Connect.release.xcconfig"; path = "Target Support Files/Pods-SEWA Connect/Pods-SEWA Connect.release.xcconfig"; sourceTree = "<group>"; };
+		3F5882B1A6C4B816835F7739 /* Pods_SEWA_ConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEWA_ConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B473631E6DFD68827981F6C /* Pods_SEWA_Connect_SEWA_ConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEWA_Connect_SEWA_ConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69302323380DD9405D8F38EE /* Pods-SEWA Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA Connect.debug.xcconfig"; path = "Target Support Files/Pods-SEWA Connect/Pods-SEWA Connect.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC984283F0AB9915625E1F8 /* Pods-SEWA Connect-SEWA ConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA Connect-SEWA ConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-SEWA Connect-SEWA ConnectUITests/Pods-SEWA Connect-SEWA ConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ACC8DDBA3B9319A8726593DC /* Pods-SEWA ConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEWA ConnectTests.release.xcconfig"; path = "Target Support Files/Pods-SEWA ConnectTests/Pods-SEWA ConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAD691DED846956496AA1700 /* Pods_SEWA_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEWA_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1730A5B6236E2C270080B618 /* WebKit.framework in Frameworks */,
+				20FA05F640EBB1CAE361DF34 /* Pods_SEWA_Connect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996D0CA8EFD9C9C2EE80D551 /* Pods_SEWA_ConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +112,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE71CF7B0EC649729C35086 /* Pods_SEWA_Connect_SEWA_ConnectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB95CF7C8972642EC06C8B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69302323380DD9405D8F38EE /* Pods-SEWA Connect.debug.xcconfig */,
+				3A3A43E449D2C5CE9A6FDFAF /* Pods-SEWA Connect.release.xcconfig */,
+				26705DA883F0B06D65BCC4BB /* Pods-SEWA Connect-SEWA ConnectUITests.debug.xcconfig */,
+				6DC984283F0AB9915625E1F8 /* Pods-SEWA Connect-SEWA ConnectUITests.release.xcconfig */,
+				1CA269764E5BD2FF9778C212 /* Pods-SEWA ConnectTests.debug.xcconfig */,
+				ACC8DDBA3B9319A8726593DC /* Pods-SEWA ConnectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		172A6880236E521D001BDE43 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				172A6881236E5230001BDE43 /* UserProvider.swift */,
+				172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		17E3927D236E0663005D94BE = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +148,8 @@
 				17E392A1236E0666005D94BE /* SEWA ConnectTests */,
 				17E392AC236E0666005D94BE /* SEWA ConnectUITests */,
 				17E39287236E0663005D94BE /* Products */,
+				0AB95CF7C8972642EC06C8B6 /* Pods */,
+				C8F210E3B609733E4703672D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +166,7 @@
 		17E39288236E0663005D94BE /* SEWA Connect */ = {
 			isa = PBXGroup;
 			children = (
+				172A6880236E521D001BDE43 /* service */,
 				22A814FD236E2428008596DF /* ui */,
 				22A814FC236E1236008596DF /* SEWA Connect.entitlements */,
 				17E39289236E0663005D94BE /* AppDelegate.swift */,
@@ -114,6 +177,12 @@
 				17E39294236E0666005D94BE /* Assets.xcassets */,
 				17E39296236E0666005D94BE /* LaunchScreen.storyboard */,
 				17E39299236E0666005D94BE /* Info.plist */,
+				172A6887236E7845001BDE43 /* GoogleService-Info.plist */,
+				172A6883236E52D8001BDE43 /* User.swift */,
+				172A6889236E7AEF001BDE43 /* Request.swift */,
+				172A688B236E7B75001BDE43 /* Location.swift */,
+				172A688F236E9845001BDE43 /* UIViewController+Present.swift */,
+				172A6891236E9B53001BDE43 /* RootSplitViewController.swift */,
 			);
 			path = "SEWA Connect";
 			sourceTree = "<group>";
@@ -140,8 +209,21 @@
 			isa = PBXGroup;
 			children = (
 				22A814FE236E24C4008596DF /* FTUEViewController.swift */,
+				172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */,
+				172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		C8F210E3B609733E4703672D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1730A5B4236E2BEC0080B618 /* WebKit.framework */,
+				EAD691DED846956496AA1700 /* Pods_SEWA_Connect.framework */,
+				5B473631E6DFD68827981F6C /* Pods_SEWA_Connect_SEWA_ConnectUITests.framework */,
+				3F5882B1A6C4B816835F7739 /* Pods_SEWA_ConnectTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17E392B2236E0666005D94BE /* Build configuration list for PBXNativeTarget "SEWA Connect" */;
 			buildPhases = (
+				27DCAB92B88E8A69D257C163 /* [CP] Check Pods Manifest.lock */,
 				17E39282236E0663005D94BE /* Sources */,
 				17E39283236E0663005D94BE /* Frameworks */,
 				17E39284236E0663005D94BE /* Resources */,
+				D6F1DF7206BC8ED31561B461 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17E392B5236E0666005D94BE /* Build configuration list for PBXNativeTarget "SEWA ConnectTests" */;
 			buildPhases = (
+				2F0F2C7FC17582AB3CC084D3 /* [CP] Check Pods Manifest.lock */,
 				17E3929A236E0666005D94BE /* Sources */,
 				17E3929B236E0666005D94BE /* Frameworks */,
 				17E3929C236E0666005D94BE /* Resources */,
@@ -186,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17E392B8236E0666005D94BE /* Build configuration list for PBXNativeTarget "SEWA ConnectUITests" */;
 			buildPhases = (
+				67D48CB4C8DBEB667C2734F4 /* [CP] Check Pods Manifest.lock */,
 				17E392A5236E0666005D94BE /* Sources */,
 				17E392A6236E0666005D94BE /* Frameworks */,
 				17E392A7236E0666005D94BE /* Resources */,
+				8BD13A856EFA47E34B2A9DBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E39298236E0666005D94BE /* LaunchScreen.storyboard in Resources */,
+				172A6888236E7845001BDE43 /* GoogleService-Info.plist in Resources */,
 				17E39295236E0666005D94BE /* Assets.xcassets in Resources */,
 				17E39293236E0663005D94BE /* Main.storyboard in Resources */,
 			);
@@ -270,14 +358,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27DCAB92B88E8A69D257C163 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEWA Connect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F0F2C7FC17582AB3CC084D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEWA ConnectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D48CB4C8DBEB667C2734F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEWA Connect-SEWA ConnectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD13A856EFA47E34B2A9DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect-SEWA ConnectUITests/Pods-SEWA Connect-SEWA ConnectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect-SEWA ConnectUITests/Pods-SEWA Connect-SEWA ConnectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect-SEWA ConnectUITests/Pods-SEWA Connect-SEWA ConnectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F1DF7206BC8ED31561B461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect/Pods-SEWA Connect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect/Pods-SEWA Connect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SEWA Connect/Pods-SEWA Connect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17E39282236E0663005D94BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */,
 				22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */,
+				172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */,
+				172A688C236E7B75001BDE43 /* Location.swift in Sources */,
+				172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */,
+				172A6892236E9B53001BDE43 /* RootSplitViewController.swift in Sources */,
 				17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */,
+				172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */,
 				17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */,
+				172A6884236E52D8001BDE43 /* User.swift in Sources */,
+				172A6882236E5230001BDE43 /* UserProvider.swift in Sources */,
+				172A688A236E7AEF001BDE43 /* Request.swift in Sources */,
 				17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */,
 				17E39290236E0663005D94BE /* DetailViewController.swift in Sources */,
 			);
@@ -450,9 +650,13 @@
 		};
 		17E392B3236E0666005D94BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69302323380DD9405D8F38EE /* Pods-SEWA Connect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = D684833V59;
 				INFOPLIST_FILE = "SEWA Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,7 +665,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jhk.SEWA-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,9 +675,13 @@
 		};
 		17E392B4236E0666005D94BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3A43E449D2C5CE9A6FDFAF /* Pods-SEWA Connect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = D684833V59;
 				INFOPLIST_FILE = "SEWA Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +690,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jhk.SEWA-Connect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,6 +700,7 @@
 		};
 		17E392B6236E0666005D94BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA269764E5BD2FF9778C212 /* Pods-SEWA ConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +723,7 @@
 		};
 		17E392B7236E0666005D94BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC8DDBA3B9319A8726593DC /* Pods-SEWA ConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +746,7 @@
 		};
 		17E392B9236E0666005D94BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26705DA883F0B06D65BCC4BB /* Pods-SEWA Connect-SEWA ConnectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +767,7 @@
 		};
 		17E392BA236E0666005D94BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC984283F0AB9915625E1F8 /* Pods-SEWA Connect-SEWA ConnectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

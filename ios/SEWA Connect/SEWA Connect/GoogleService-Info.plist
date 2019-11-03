@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1064451890007-7lt37o6iaj0pv0me840d6dqcda27pqf8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1064451890007-7lt37o6iaj0pv0me840d6dqcda27pqf8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1064451890007-72vtvgfesn30rq9c3irebumgg2gjn2ni.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3yNsxlTPmjcWfC6v-TF6kbsOuGECSjRI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1064451890007</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jhk.SEWA-Connect</string>
+	<key>PROJECT_ID</key>
+	<string>sewa-conncect</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sewa-conncect.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1064451890007:ios:dbf0a17d3b4ff41d763c12</string>
+	<key>DATABASE_URL</key>
+	<string>https://sewa-conncect.firebaseio.com</string>
+</dict>
+</plist>
