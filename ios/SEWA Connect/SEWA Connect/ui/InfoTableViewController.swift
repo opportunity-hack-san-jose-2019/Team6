@@ -7,10 +7,18 @@
 //
 
 import UIKit
-
+enum SubmissionType {
+    case requestHelp, volunteering
+}
 class InfoTableViewController: UITableViewController, UITextFieldDelegate {
 
     var selectedIndexPath: IndexPath?
+    var submissionType: SubmissionType = .requestHelp
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var additionaInfo: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +69,31 @@ class InfoTableViewController: UITableViewController, UITextFieldDelegate {
         }
         return true
     }
+    
+    @IBAction func submit(_ sender: Any) {
+        guard
+            let index = selectedIndexPath?.item,
+            let helpType = HelpType(rawValue: index),
+            let email = emailTextField.text,
+            let phone = phoneTextField.text,
+            let name = nameTextField.text,
+            let additionalInfo = additionaInfo.text else { return }
+
+        if submissionType == SubmissionType.requestHelp {
+            let requestor = Requestor(userId: UIDevice.current.identifierForVendor!.uuidString, name: name, type: .helpSeeker, email: email, phone: phone, location: nil)
+            
+            
+            
+            let now = Date().timeIntervalSince1970
+            let request = Request(requestingHelpType: helpType, requestor: requestor, additionInfo: additionalInfo, createdAtUTC: now, lastModifiedAt: now)
+            
+            RemoteDataProvider.instance.post(request)
+        }
+        else {
+            
+        }
+    }
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

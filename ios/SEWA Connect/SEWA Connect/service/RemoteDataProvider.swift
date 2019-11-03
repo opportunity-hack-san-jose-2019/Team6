@@ -26,8 +26,8 @@ final class RemoteDataProvider: NSObject {
 
     override init() {
         super.init()
-        requestsDocRef = db.collection("help_request")
-        volunteersDocRef = db.collection("volunteer")
+        requestsDocRef = db.collection("requests")
+        volunteersDocRef = db.collection("volunteers")
     }
     
     func getRequests() {
@@ -36,6 +36,24 @@ final class RemoteDataProvider: NSObject {
             let documents = snapShot.documents
             self?.setupListens(from: documents)
         }
+    }
+    
+    func post(_ request: Request) {
+        let requestMap = request.requestMap()
+        requestsDocRef.addDocument(data: requestMap) { (error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                DispatchQueue.main.async {
+                    UserProvider.instance.save(request.requestor)
+                }
+            }
+        }
+    }
+    
+    func post(_ volunteer: Volunteer) {
+//        volunteersDocRef.addDocument(data: volunteer.userMap())
     }
     
     private func setupListens(from docs: [QueryDocumentSnapshot]) {

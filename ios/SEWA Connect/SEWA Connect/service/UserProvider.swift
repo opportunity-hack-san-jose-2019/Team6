@@ -17,7 +17,7 @@ final class UserProvider: NSObject {
     var currentUserObservable: Observable<User?> {
         return currentUserSubject
     }
-    
+
     override init() {
         super.init()
         loadUser()
@@ -25,11 +25,13 @@ final class UserProvider: NSObject {
     
     func save(_ user: User) {
         UserDefaults.standard.set(user.userMap(), forKey: "storedUser")
+        currentUserSubject.onNext(user)
     }
     
     func loadUser() {
         guard let userMap = UserDefaults.standard.object(forKey: "storedUser") as? [String: Any] else { return }
         guard
+            let name = userMap["userName"] as? String,
             let userId = userMap["userId"] as? String,
             let userType = userMap["type"] as? UserType,
             let email = userMap["emial"] as? String,
@@ -40,11 +42,11 @@ final class UserProvider: NSObject {
         
         if userType == .volunteer {
             guard let helpType = userMap["offeringHelpType"] as? HelpType else { return }
-            let volunteer = Volunteer(userId: userId, type: userType, email: email, phone: phone, location: Location(lat: lat, lon: lon), offeringHelpType: helpType)
+            let volunteer = Volunteer(name: name, userId: userId, type: userType, email: email, phone: phone, location: Location(lat: lat, lon: lon), offeringHelpType: helpType)
             currentUserSubject.onNext(volunteer)
         }
         else {
-            let user = Requestor(userId: userId, type: userType, email: email, phone: phone, location: Location(lat: lat, lon: lon))
+            let user = Requestor(userId: userId, name: name, type: userType, email: email, phone: phone, location: Location(lat: lat, lon: lon))
             currentUserSubject.onNext(user)
         }
     }

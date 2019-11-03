@@ -106,7 +106,13 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Requests" id="Zdf-7t-Un8">
+                        <barButtonItem key="leftBarButtonItem" title="FTUE" id="zT4-3k-vjT">
+                            <connections>
+                                <action selector="ftue:" destination="7bK-jq-Zjz" id="GJ0-O3-wnL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +121,7 @@
         <!--View Controller-->
         <scene sceneID="FIe-vg-SqD">
             <objects>
-                <viewController storyboardIdentifier="FTUEViewController" id="OCy-gd-riS" customClass="FTUEViewController" customModule="SEWA_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OCy-gd-riS" customClass="FTUEViewController" customModule="SEWA_Connect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hbH-K1-iNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,7 +195,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYE-Ok-mkY">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <connections>
-                                    <segue destination="WU4-qk-j7b" kind="embed" id="Jd6-He-ITB"/>
+                                    <segue destination="WU4-qk-j7b" kind="embed" identifier="infoSubmissionTableView" id="Jd6-He-ITB"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -206,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9R-es-fEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3467" y="-463"/>
+            <point key="canvasLocation" x="3438" y="-463"/>
         </scene>
         <!--Info Table View Controller-->
         <scene sceneID="yxL-C3-uBt">
@@ -418,6 +424,9 @@
                                                     <state key="normal" title="Submit">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="submit:" destination="WU4-qk-j7b" eventType="touchUpInside" id="Pa0-sZ-2AY"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -437,6 +446,12 @@
                             <outlet property="delegate" destination="WU4-qk-j7b" id="1sP-IX-ZM1"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="additionaInfo" destination="h83-x6-rjt" id="Nl3-P3-iv5"/>
+                        <outlet property="emailTextField" destination="pzX-m3-XeD" id="YzO-po-CeJ"/>
+                        <outlet property="nameTextField" destination="22k-YA-Bah" id="0fK-cC-EtR"/>
+                        <outlet property="phoneTextField" destination="ngm-T7-OcO" id="NTL-Z2-7o7"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mde-bF-eGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -445,7 +460,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yXs-t7-pz4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQ4-yh-HWn" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FTUEViewController" automaticallyAdjustsScrollViewInsets="NO" id="uQ4-yh-HWn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VTm-A9-d8d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
