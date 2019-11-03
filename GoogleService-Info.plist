@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>619884601040-56rrd2koj0jdg35fndrtupp9mimeel9s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.619884601040-56rrd2koj0jdg35fndrtupp9mimeel9s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDB4mExM33yzoR8mfHywm5TlyLK_7kK1u4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>619884601040</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jhk.SEWA-Connect</string>
+	<key>PROJECT_ID</key>
+	<string>sewa-connect</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sewa-connect.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:619884601040:ios:f350b09e8e0e202f4708d5</string>
+	<key>DATABASE_URL</key>
+	<string>https://sewa-connect.firebaseio.com</string>
+</dict>
+</plist>
