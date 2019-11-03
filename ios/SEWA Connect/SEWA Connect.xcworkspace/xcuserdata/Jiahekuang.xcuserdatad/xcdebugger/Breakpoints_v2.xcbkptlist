@@ -46,25 +46,9 @@
             filePath = "SEWA Connect/MasterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "registerObservers()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8822B2E2-1AF7-4005-8E07-F0F501F48BC2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SEWA Connect/service/RemoteDataProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "getRequests()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -81,22 +65,6 @@
             startingLineNumber = "25"
             endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0D5D2739-3EDD-485E-959D-F382A18A777B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SEWA Connect/service/RemoteDataProvider.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "process(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -129,6 +97,54 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "getRequests()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4A1FCC6D-1147-4C78-8996-066324C8E13B - 988f8506e4a45a06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SEWA_Connect.RemoteDataProvider.getRequests() -&gt; ()"
+                  moduleName = "SEWA Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jiahekuang/sewa%20connect/ios/SEWA%20Connect/SEWA%20Connect/service/RemoteDataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  uuid = "4A1FCC6D-1147-4C78-8996-066324C8E13B - 3b921677ffb7f6a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SEWA_Connect.RemoteDataProvider.getRequests() -&gt; ()"
+                  moduleName = "SEWA Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Jiahekuang/sewa%20connect/ios/SEWA%20Connect/SEWA%20Connect/service/RemoteDataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16E4B75B-053C-49DA-BC7F-D32C14DCBB14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SEWA Connect/service/RemoteDataProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "process(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

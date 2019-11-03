@@ -28,8 +28,9 @@ class MasterViewController: UITableViewController {
     private func registerObservers() {
         RemoteDataProvider.instance.loadedRequestsObservable
             .filter({$0.count != 0})
-            .subscribe(onNext: { (requests) in
-                print(requests)
+            .subscribe(onNext: { [weak self] (requests) in
+                self?.requets = requests
+                self?.tableView.reloadData()
             })
         .disposed(by: disposeBag)
     }
@@ -69,7 +70,10 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "requestCell", for: indexPath) as! RequestTableViewCell
+        let request = requets[indexPath.item]
+        cell.requestTypeLabel.text = request.requestingHelpType.typeName
+        cell.requestSummary.text = "Created by \(request.requestor.name) on \(Date(timeIntervalSince1970: request.createdAtUTC))"
         return cell
     }
 
