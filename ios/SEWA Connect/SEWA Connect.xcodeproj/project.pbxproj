@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */; };
+		172A6882236E5230001BDE43 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6881236E5230001BDE43 /* UserProvider.swift */; };
+		172A6884236E52D8001BDE43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6883236E52D8001BDE43 /* User.swift */; };
+		172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */; };
 		1730A5B6236E2C270080B618 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1730A5B4236E2BEC0080B618 /* WebKit.framework */; };
 		17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E39289236E0663005D94BE /* AppDelegate.swift */; };
 		17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E3928B236E0663005D94BE /* SceneDelegate.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSubmissionViewController.swift; sourceTree = "<group>"; };
+		172A6881236E5230001BDE43 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		172A6883236E52D8001BDE43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		1730A5B4236E2BEC0080B618 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		17E39286236E0663005D94BE /* SEWA Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEWA Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E39289236E0663005D94BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +120,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		172A6880236E521D001BDE43 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				172A6881236E5230001BDE43 /* UserProvider.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		17E3927D236E0663005D94BE = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 		17E39288236E0663005D94BE /* SEWA Connect */ = {
 			isa = PBXGroup;
 			children = (
+				172A6880236E521D001BDE43 /* service */,
 				22A814FD236E2428008596DF /* ui */,
 				22A814FC236E1236008596DF /* SEWA Connect.entitlements */,
 				17E39289236E0663005D94BE /* AppDelegate.swift */,
@@ -147,6 +164,7 @@
 				17E39294236E0666005D94BE /* Assets.xcassets */,
 				17E39296236E0666005D94BE /* LaunchScreen.storyboard */,
 				17E39299236E0666005D94BE /* Info.plist */,
+				172A6883236E52D8001BDE43 /* User.swift */,
 			);
 			path = "SEWA Connect";
 			sourceTree = "<group>";
@@ -173,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				22A814FE236E24C4008596DF /* FTUEViewController.swift */,
+				172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */,
+				172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -428,8 +448,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */,
+				172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */,
 				17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */,
+				172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */,
 				17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */,
+				172A6884236E52D8001BDE43 /* User.swift in Sources */,
+				172A6882236E5230001BDE43 /* UserProvider.swift in Sources */,
 				17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */,
 				17E39290236E0663005D94BE /* DetailViewController.swift in Sources */,
 			);
@@ -609,7 +633,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = CA6PY2LF2K;
+				DEVELOPMENT_TEAM = D684833V59;
 				INFOPLIST_FILE = "SEWA Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,7 +658,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
-				DEVELOPMENT_TEAM = CA6PY2LF2K;
+				DEVELOPMENT_TEAM = D684833V59;
 				INFOPLIST_FILE = "SEWA Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
