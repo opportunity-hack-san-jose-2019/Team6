@@ -26,11 +26,22 @@ class MasterViewController: UITableViewController {
     }
     
     private func registerObservers() {
-        RemoteDataProvider.instance.loadedRequestsObservable
-            .filter({$0.count != 0})
-            .subscribe(onNext: { [weak self] (requests) in
-                self?.requets = requests
-                self?.tableView.reloadData()
+        Observable.zip(RemoteDataProvider.instance.loadedRequestsObservable.filter({$0.count != 0}), UserProvider.instance.currentUserObservable.filter({$0 != nil}))
+            .subscribe(onNext: { [weak self] (combined) in
+                if let user = combined.1, user.type == .helpSeeker {
+                    var requestorRequests = [Request]()
+                    for request in combined.0 {
+                        if request.requestor.userId == user.userId {
+                            requestorRequests.append(request)
+                        }
+                    }
+                    self?.requets = requestorRequests
+                    self?.tableView.reloadData()
+                }
+                else {
+                    self?.requets = combined.0
+                    self?.tableView.reloadData()
+                }
             })
         .disposed(by: disposeBag)
     }
