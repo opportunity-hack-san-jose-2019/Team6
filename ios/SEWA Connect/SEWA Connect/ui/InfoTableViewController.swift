@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import RxSwift
+
 enum SubmissionType {
     case requestHelp, volunteering
 }
+
 class InfoTableViewController: UITableViewController, UITextFieldDelegate {
 
     var selectedIndexPath: IndexPath?
-    var submissionType: SubmissionType = .requestHelp
+    var submissionType: SubmissionType!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var additionaInfo: UITextField!
+
+    private var disposeBag = DisposeBag()
+    private var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,25 @@ class InfoTableViewController: UITableViewController, UITextFieldDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         tableView.tableFooterView = UIView()
+        
+        // Do any additional setup after loading the view.
+        UserProvider.instance.currentUserObservable.filter({$0 != nil})
+            .observeOn(MainScheduler.asyncInstance)
+            .subscribe(onNext: { [weak self] (user) in
+                if user?.type == UserType.helpSeeker && self?.submissionType == SubmissionType.requestHelp {
+                    self?.emailTextField.text = user?.email
+                    self?.phoneTextField.text = user?.phone
+                    self?.nameTextField.text = user?.name
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        UserProvider.instance.submissionTypeSubject
+            .subscribe(onNext: { [weak self] (type) in
+                self?.submissionType = type
+            })
+        .disposed(by: disposeBag)
+
     }
 
     // MARK: - Table view data source
@@ -81,16 +106,15 @@ class InfoTableViewController: UITableViewController, UITextFieldDelegate {
 
         if submissionType == SubmissionType.requestHelp {
             let requestor = Requestor(userId: UIDevice.current.identifierForVendor!.uuidString, name: name, type: .helpSeeker, email: email, phone: phone, location: nil)
-            
-            
-            
             let now = Date().timeIntervalSince1970
             let request = Request(requestingHelpType: helpType, requestor: requestor, additionInfo: additionalInfo, createdAtUTC: now, lastModifiedAt: now)
-            
             RemoteDataProvider.instance.post(request)
+            self.dismiss(animated: true, completion: nil)
         }
         else {
-            
+            let volunteer = Volunteer(name: name, userId: UIDevice.current.identifierForVendor!.uuidString, type: .volunteer, email: email, phone: phone, location: nil, offeringHelpType: helpType)
+            RemoteDataProvider.instance.post(volunteer)
+            self.dismiss(animated: true, completion: nil)
         }
     }
     

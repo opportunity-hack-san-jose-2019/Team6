@@ -32,8 +32,8 @@ struct Volunteer: User {
                 "offeringHelpType": offeringHelpType.rawValue,
                 "email": email,
                 "phone": phone,
-                "lat": location?.lat ?? "",
-                "lon": location?.lon ?? ""] as [String: Any]
+                "lat": location?.lat ?? 0.0,
+                "lon": location?.lon ?? 0.0] as [String: Any]
     }
      
     var name: String
@@ -60,8 +60,8 @@ struct Requestor: User {
                 "type":  type.rawValue,
                 "email": email,
                 "phone": phone,
-                "lat": location?.lat ?? "",
-                "lon": location?.lon ?? ""] as [String: Any]
+                "lat": location?.lat ?? 0.0,
+                "lon": location?.lon ?? 0.0] as [String: Any]
     }
         
     var userId: String

@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import RxSwift
 
 class InfoSubmissionViewController: UIViewController {
 
     var type: SubmissionType!
-    
+    private var disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     // MARK: - Navigation

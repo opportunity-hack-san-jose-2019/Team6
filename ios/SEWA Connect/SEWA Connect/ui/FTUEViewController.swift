@@ -30,6 +30,7 @@ class FTUEViewController: UIViewController {
             .subscribe(onNext: { [weak self] (_) in
                 self?.performSegue(withIdentifier: "submitInfo", sender: self)
                 self?.selectedType = .requestHelp
+                UserProvider.instance.submissionTypeSubject.onNext(.requestHelp)
             })
         .disposed(by: disposeBag)
         
@@ -37,13 +38,7 @@ class FTUEViewController: UIViewController {
             .subscribe(onNext: { [weak self] (_) in
                 self?.performSegue(withIdentifier: "submitInfo", sender: self)
                 self?.selectedType = .volunteering
-            })
-        .disposed(by: disposeBag)
-
-        UserProvider.instance.currentUserObservable.filter({$0 != nil})
-            .observeOn(MainScheduler.asyncInstance)
-            .subscribe(onNext: { [weak self] (_) in
-                self?.navigationController?.dismiss(animated: true, completion: nil)
+                UserProvider.instance.submissionTypeSubject.onNext(.volunteering)
             })
         .disposed(by: disposeBag)
     }
