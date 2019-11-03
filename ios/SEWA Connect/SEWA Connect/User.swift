@@ -12,10 +12,60 @@ enum UserType {
     case helpSeeker, volunteer, admin
 }
 
-struct User {
-    let type: UserType
-    let email: String?
-    let phone: String
-    let address: String?
+protocol User {
+    var userId: String { get set }
+    var type: UserType { get set }
+    var email: String { get set }
+    var phone: String { get set }
+    var location: Location? { get set }
     
+    func userMap() -> [String: Any]
+}
+
+struct Volunteer: User {
+
+    func userMap() -> [String : Any] {
+        return ["userId": userId,
+                "type":  type,
+                "offeringHelpType": offeringHelpType,
+                "email": email,
+                "phone": phone,
+                "lat": location?.lat ?? "",
+                "lon": location?.lon ?? ""] as [String: Any]
+    }
+        
+    var userId: String
+    
+    var type: UserType
+    
+    var email: String
+    
+    var phone: String
+    
+    var location: Location?
+    
+    var offeringHelpType: HelpType
+
+}
+
+struct Requestor: User {
+    
+    func userMap() -> [String : Any] {
+        return ["userId": userId,
+                "type":  type,
+                "email": email,
+                "phone": phone,
+                "lat": location?.lat ?? "",
+                "lon": location?.lon ?? ""] as [String: Any]
+    }
+        
+    var userId: String
+    
+    var type: UserType
+    
+    var email: String
+    
+    var phone: String
+    
+    var location: Location?
 }

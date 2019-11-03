@@ -11,6 +11,13 @@
 		172A6882236E5230001BDE43 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6881236E5230001BDE43 /* UserProvider.swift */; };
 		172A6884236E52D8001BDE43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6883236E52D8001BDE43 /* User.swift */; };
 		172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */; };
+		172A6888236E7845001BDE43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 172A6887236E7845001BDE43 /* GoogleService-Info.plist */; };
+		172A688A236E7AEF001BDE43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6889236E7AEF001BDE43 /* Request.swift */; };
+		172A688C236E7B75001BDE43 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688B236E7B75001BDE43 /* Location.swift */; };
+		172A688E236E7F41001BDE43 /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688D236E7F41001BDE43 /* RequestProvider.swift */; };
+		172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688F236E9845001BDE43 /* UIViewController+Present.swift */; };
+		172A6892236E9B53001BDE43 /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6891236E9B53001BDE43 /* RootSplitViewController.swift */; };
+		172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */; };
 		1730A5B6236E2C270080B618 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1730A5B4236E2BEC0080B618 /* WebKit.framework */; };
 		17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E39289236E0663005D94BE /* AppDelegate.swift */; };
 		17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E3928B236E0663005D94BE /* SceneDelegate.swift */; };
@@ -49,6 +56,13 @@
 		172A6881236E5230001BDE43 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		172A6883236E52D8001BDE43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		172A6887236E7845001BDE43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		172A6889236E7AEF001BDE43 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		172A688B236E7B75001BDE43 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		172A688D236E7F41001BDE43 /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
+		172A688F236E9845001BDE43 /* UIViewController+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
+		172A6891236E9B53001BDE43 /* RootSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
+		172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProvider.swift; sourceTree = "<group>"; };
 		1730A5B4236E2BEC0080B618 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		17E39286236E0663005D94BE /* SEWA Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SEWA Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E39289236E0663005D94BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				172A6881236E5230001BDE43 /* UserProvider.swift */,
+				172A688D236E7F41001BDE43 /* RequestProvider.swift */,
+				172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -164,7 +180,12 @@
 				17E39294236E0666005D94BE /* Assets.xcassets */,
 				17E39296236E0666005D94BE /* LaunchScreen.storyboard */,
 				17E39299236E0666005D94BE /* Info.plist */,
+				172A6887236E7845001BDE43 /* GoogleService-Info.plist */,
 				172A6883236E52D8001BDE43 /* User.swift */,
+				172A6889236E7AEF001BDE43 /* Request.swift */,
+				172A688B236E7B75001BDE43 /* Location.swift */,
+				172A688F236E9845001BDE43 /* UIViewController+Present.swift */,
+				172A6891236E9B53001BDE43 /* RootSplitViewController.swift */,
 			);
 			path = "SEWA Connect";
 			sourceTree = "<group>";
@@ -318,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E39298236E0666005D94BE /* LaunchScreen.storyboard in Resources */,
+				172A6888236E7845001BDE43 /* GoogleService-Info.plist in Resources */,
 				17E39295236E0666005D94BE /* Assets.xcassets in Resources */,
 				17E39293236E0663005D94BE /* Main.storyboard in Resources */,
 			);
@@ -447,13 +469,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172A688E236E7F41001BDE43 /* RequestProvider.swift in Sources */,
+				172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */,
 				22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */,
+				172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */,
+				172A688C236E7B75001BDE43 /* Location.swift in Sources */,
 				172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */,
+				172A6892236E9B53001BDE43 /* RootSplitViewController.swift in Sources */,
 				17E3928A236E0663005D94BE /* AppDelegate.swift in Sources */,
 				172A6886236E5E9B001BDE43 /* InfoTableViewController.swift in Sources */,
 				17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */,
 				172A6884236E52D8001BDE43 /* User.swift in Sources */,
 				172A6882236E5230001BDE43 /* UserProvider.swift in Sources */,
+				172A688A236E7AEF001BDE43 /* Request.swift in Sources */,
 				17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */,
 				17E39290236E0663005D94BE /* DetailViewController.swift in Sources */,
 			);
