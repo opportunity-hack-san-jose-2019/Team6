@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/chat_model"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_usermessage"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"
+        />
+
+
+    <TextView
+        android:id="@+id/activityvideo_chatmodel_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_user"
+        android:padding="8dp"
+        android:text="Username: aaaaaaaa"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_usermessage"
+        app:layout_constraintHorizontal_bias="1"
+        android:gravity="right"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

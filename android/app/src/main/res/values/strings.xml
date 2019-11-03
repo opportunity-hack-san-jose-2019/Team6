@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SewaCionnect</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="google_maps_API_KEY">AIzaSyCrE6dtmyjLgHv2XL717WJ11s48SAm0RsI</string>
+    <string name="create_new_account">Create New Account</string>
+</resources>

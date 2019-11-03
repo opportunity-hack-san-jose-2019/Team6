@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activitymain_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/registeractivity_icon"
+                app:srcCompat="@drawable/icon_blue_sewa"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/actRegister_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="SewaConnect Chatbot"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/registeractivity_icon"
+                android:textColor="@color/standardBlue"
+                android:textSize="20sp"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/activitymain_toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activitymain_toolbar"
+        android:background="@color/dividerColor"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activityvideo_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activityvideo_sendmessage_layout"
+        android:layout_below="@+id/activitymain_toolbar_divider"
+        android:layout_marginBottom="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/activityvideo_sendmessage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorWhite">
+
+        <View
+            android:id="@+id/activityvideo_video_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerColor"/>
+
+        <EditText
+            android:id="@+id/activityvideo_sendmessage_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Message"
+            android:textSize="14sp"
+            android:paddingLeft="12dp"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/activityvideo_sendmessage_button"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_below="@+id/activityvideo_video_divider1"/>
+
+        <Button
+            android:id="@+id/activityvideo_sendmessage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:text="Send"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="10dp"
+            android:layout_below="@+id/activityvideo_video_divider1"/>
+
+    </RelativeLayout>
+    
+    
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1064451890007",
+    "firebase_url": "https://sewa-conncect.firebaseio.com",
+    "project_id": "sewa-conncect",
+    "storage_bucket": "sewa-conncect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064451890007:android:a3e8361ce36964ae763c12",
+        "android_client_info": {
+          "package_name": "evan.com.sewaconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064451890007-72vtvgfesn30rq9c3irebumgg2gjn2ni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "evan.com.sewaconnect",
+            "certificate_hash": "4d18e7bc5cc1a3d2734b447ed02b9d1d9388ee7b"
+          }
+        },
+        {
+          "client_id": "1064451890007-ntdrlljjtth8i9u2o2v926ong72vh75s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt5TPXiN9cGRkEJbvhM25k2Npc7QWdnbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064451890007-ntdrlljjtth8i9u2o2v926ong72vh75s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

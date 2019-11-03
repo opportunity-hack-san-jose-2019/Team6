@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="6dp">
+
+    <ImageView
+        android:id="@+id/modelrv_following_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/profile_picture_image_border"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/requestmodel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutoring"
+        android:textStyle="bold"
+        android:paddingRight="6dp"
+        android:layout_toRightOf="@+id/modelrv_following_image"/>
+    <TextView
+        android:id="@+id/requestmodel_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlackFont"
+        android:text="In Progress"
+        android:layout_alignParentRight="true"
+        android:padding="6dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/requestmodel_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My son is looking for a math tutor"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/requestmodel_type"
+        android:layout_toRightOf="@+id/modelrv_following_image"/>
+
+    <TextView
+        android:id="@+id/requestmodel_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created: Oct 31st, 2019"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/requestmodel_message"
+        android:layout_toRightOf="@+id/modelrv_following_image"
+        android:layout_marginBottom="12dp"/>
+
+</RelativeLayout>
