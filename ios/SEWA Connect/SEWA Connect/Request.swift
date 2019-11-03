@@ -15,6 +15,17 @@ enum HelpType: Int {
     case disasterRecovery = 0
     case familyServices
     case tutoring
+    
+    var typeName: String {
+        switch self {
+        case .disasterRecovery:
+            return "Disaster Recovery"
+        case .familyServices:
+            return "Family Services"
+        case .tutoring:
+            return "Tutoring"
+        }
+    }
 }
 
 struct Request {

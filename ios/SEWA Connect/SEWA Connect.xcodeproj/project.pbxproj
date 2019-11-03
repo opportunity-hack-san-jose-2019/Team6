@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171F8753236EFE8D00AC6908 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F8752236EFE8D00AC6908 /* RequestTableViewCell.swift */; };
 		172A687F236E4F53001BDE43 /* InfoSubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */; };
 		172A6882236E5230001BDE43 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6881236E5230001BDE43 /* UserProvider.swift */; };
 		172A6884236E52D8001BDE43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6883236E52D8001BDE43 /* User.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171F8752236EFE8D00AC6908 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSubmissionViewController.swift; sourceTree = "<group>"; };
 		172A6881236E5230001BDE43 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		172A6883236E52D8001BDE43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				22A814FE236E24C4008596DF /* FTUEViewController.swift */,
 				172A687E236E4F53001BDE43 /* InfoSubmissionViewController.swift */,
 				172A6885236E5E9B001BDE43 /* InfoTableViewController.swift */,
+				171F8752236EFE8D00AC6908 /* RequestTableViewCell.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				17E3928C236E0663005D94BE /* SceneDelegate.swift in Sources */,
 				172A6884236E52D8001BDE43 /* User.swift in Sources */,
 				172A6882236E5230001BDE43 /* UserProvider.swift in Sources */,
+				171F8753236EFE8D00AC6908 /* RequestTableViewCell.swift in Sources */,
 				172A688A236E7AEF001BDE43 /* Request.swift in Sources */,
 				17E3928E236E0663005D94BE /* MasterViewController.swift in Sources */,
 				17E39290236E0663005D94BE /* DetailViewController.swift in Sources */,

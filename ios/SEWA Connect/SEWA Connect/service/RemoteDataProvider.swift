@@ -87,13 +87,11 @@ final class RemoteDataProvider: NSObject {
                 let statsNum = data["status"] as? Int,
                 let status = Status(rawValue: statsNum),
                 let user = data["user"] as? [String: Any],
-                let userId = data["userId"] as? String,
-                let userName = data["userName"] as? String,
+                let userId = user["userId"] as? String,
+                let userName = user["userName"] as? String,
                 let email = user["email"] as? String,
-                let phone = user["phone"] as? String,
-                let lat = user["lat"] as? Double,
-                let lon = user["lon"] as? Double {
-                let requestor = Requestor(userId: userId, name: userName, type: .helpSeeker, email: email, phone: phone, location: Location(lat: lat, lon: lon))
+                let phone = user["phone"] as? String {
+                let requestor = Requestor(userId: userId, name: userName, type: .helpSeeker, email: email, phone: phone, location: nil)
                 var request = Request(requestingHelpType: helpType, requestor: requestor, additionInfo: info, createdAtUTC: createdAt, lastModifiedAt: lastModifiedAt)
                 request.status = status
                 loadedRequests.append(request)
