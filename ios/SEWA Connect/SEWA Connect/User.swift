@@ -8,12 +8,13 @@
 
 import Foundation
 
-enum UserType {
+enum UserType: Int {
     case helpSeeker, volunteer, admin
 }
 
 protocol User {
     var userId: String { get set }
+    var name: String { get set }
     var type: UserType { get set }
     var email: String { get set }
     var phone: String { get set }
@@ -26,14 +27,17 @@ struct Volunteer: User {
 
     func userMap() -> [String : Any] {
         return ["userId": userId,
-                "type":  type,
-                "offeringHelpType": offeringHelpType,
+                "userName": name,
+                "type":  type.rawValue,
+                "offeringHelpType": offeringHelpType.rawValue,
                 "email": email,
                 "phone": phone,
-                "lat": location?.lat ?? "",
-                "lon": location?.lon ?? ""] as [String: Any]
+                "lat": location?.lat ?? 0.0,
+                "lon": location?.lon ?? 0.0] as [String: Any]
     }
-        
+     
+    var name: String
+
     var userId: String
     
     var type: UserType
@@ -52,14 +56,17 @@ struct Requestor: User {
     
     func userMap() -> [String : Any] {
         return ["userId": userId,
-                "type":  type,
+                "userName": name,
+                "type":  type.rawValue,
                 "email": email,
                 "phone": phone,
-                "lat": location?.lat ?? "",
-                "lon": location?.lon ?? ""] as [String: Any]
+                "lat": location?.lat ?? 0.0,
+                "lon": location?.lon ?? 0.0] as [String: Any]
     }
         
     var userId: String
+    
+    var name: String
     
     var type: UserType
     

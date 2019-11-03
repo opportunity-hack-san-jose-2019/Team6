@@ -18,6 +18,8 @@ class FTUEViewController: UIViewController {
     
     private var disposeBag = DisposeBag()
     
+    var selectedType: SubmissionType!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerObservers()
@@ -27,26 +29,17 @@ class FTUEViewController: UIViewController {
         lookingForHelpButton.rx.tap
             .subscribe(onNext: { [weak self] (_) in
                 self?.performSegue(withIdentifier: "submitInfo", sender: self)
+                self?.selectedType = .requestHelp
+                UserProvider.instance.submissionTypeSubject.onNext(.requestHelp)
             })
         .disposed(by: disposeBag)
         
         volunteeringButton.rx.tap
             .subscribe(onNext: { [weak self] (_) in
                 self?.performSegue(withIdentifier: "submitInfo", sender: self)
+                self?.selectedType = .volunteering
+                UserProvider.instance.submissionTypeSubject.onNext(.volunteering)
             })
         .disposed(by: disposeBag)
-
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

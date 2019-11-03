@@ -7,26 +7,40 @@
 //
 
 import UIKit
+import RxSwift
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var requets = [Request]()
-
-
+    var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        RemoteDataProvider.instance.getRequests()
+        registerObservers()
+    }
+    
+    private func registerObservers() {
+        RemoteDataProvider.instance.loadedRequestsObservable
+            .filter({$0.count != 0})
+            .subscribe(onNext: { (requests) in
+                print(requests)
+            })
+        .disposed(by: disposeBag)
+    }
+    
+    @IBAction func ftue(_ sender: Any) {
         presentFTUE()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
-        RemoteDataProvider.instance.getRequests()
     }
 
     // MARK: - Segues

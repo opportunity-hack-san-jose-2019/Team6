@@ -14,7 +14,6 @@
 		172A6888236E7845001BDE43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 172A6887236E7845001BDE43 /* GoogleService-Info.plist */; };
 		172A688A236E7AEF001BDE43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6889236E7AEF001BDE43 /* Request.swift */; };
 		172A688C236E7B75001BDE43 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688B236E7B75001BDE43 /* Location.swift */; };
-		172A688E236E7F41001BDE43 /* RequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688D236E7F41001BDE43 /* RequestProvider.swift */; };
 		172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A688F236E9845001BDE43 /* UIViewController+Present.swift */; };
 		172A6892236E9B53001BDE43 /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6891236E9B53001BDE43 /* RootSplitViewController.swift */; };
 		172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */; };
@@ -59,7 +58,6 @@
 		172A6887236E7845001BDE43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		172A6889236E7AEF001BDE43 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		172A688B236E7B75001BDE43 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		172A688D236E7F41001BDE43 /* RequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProvider.swift; sourceTree = "<group>"; };
 		172A688F236E9845001BDE43 /* UIViewController+Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Present.swift"; sourceTree = "<group>"; };
 		172A6891236E9B53001BDE43 /* RootSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
 		172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataProvider.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				172A6881236E5230001BDE43 /* UserProvider.swift */,
-				172A688D236E7F41001BDE43 /* RequestProvider.swift */,
 				172A6893236E9E29001BDE43 /* RemoteDataProvider.swift */,
 			);
 			path = service;
@@ -469,7 +466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172A688E236E7F41001BDE43 /* RequestProvider.swift in Sources */,
 				172A6890236E9845001BDE43 /* UIViewController+Present.swift in Sources */,
 				22A814FF236E24C4008596DF /* FTUEViewController.swift in Sources */,
 				172A6894236E9E29001BDE43 /* RemoteDataProvider.swift in Sources */,

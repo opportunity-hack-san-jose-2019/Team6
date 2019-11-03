@@ -7,24 +7,30 @@
 //
 
 import UIKit
+import RxSwift
 
 class InfoSubmissionViewController: UIViewController {
 
+    var type: SubmissionType!
+    private var disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let segueID = segue.identifier else { return }
+        switch segueID {
+        case "infoSubmissionTableView":
+            guard let cv = segue.destination as? InfoTableViewController else { return }
+            cv.submissionType = type
+        default:
+            break
+        }
     }
-    */
 
+    
 }

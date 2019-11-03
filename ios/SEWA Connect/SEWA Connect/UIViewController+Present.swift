@@ -14,10 +14,9 @@ extension UIViewController {
         self.present(rootSplitVC, animated: false, completion: nil)
     }
     
-    func presentFTUE() {
+    func presentFTUE(animated: Bool = true) {
         let ftueVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FTUEViewController")
-        ftueVC.modalPresentationStyle = .fullScreen
-        self.present(ftueVC, animated: false, completion: nil)
+        self.present(ftueVC, animated: animated, completion: nil)
 
     }
 }
